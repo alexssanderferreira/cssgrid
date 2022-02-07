@@ -1,5 +1,6 @@
 import React from "react";
 import './Destaques.css'
+import './DestaquesRespon.css'
 
 export default () => {
     return(

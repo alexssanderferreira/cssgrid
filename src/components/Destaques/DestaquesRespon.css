@@ -1,0 +1,14 @@
+@media (max-width: 767px) {
+    .destaques__principal,.destaques__categorias{
+    grid-column: 1/5;
+}
+
+.destaques__secundario:nth-child(1n + 2){
+    display: none;
+    grid-column: none;
+    grid-row: none;
+}
+}
+
+
+

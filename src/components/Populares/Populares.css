@@ -37,8 +37,8 @@
     "card-corpo";
     grid-template-columns: 100%;
     grid-template-rows: 173px auto;
-    margin-right: 1rem;
-    width: calc(20% - 1rem);
+    margin-right: 0.5%;
+    width: calc(19.6%);
 }
 
 .populares__card:last-child{

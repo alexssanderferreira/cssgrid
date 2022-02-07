@@ -1,5 +1,6 @@
 import React from "react";
 import './Populares.css'
+import './PopularesRespon.css'
 import { BsGrid3X3Gap,BsGrid3X3GapFill } from "react-icons/bs";
 
 export default () => {
