@@ -1,0 +1,35 @@
+@import './components/css/normalize.css';
+@import './components/css/reset.css';
+
+.page {
+  padding: 0 1rem;
+  background: #f1f1f1;
+  display: grid;  
+  font-family: Arial, Helvetica, sans-serif;
+  grid-template-areas: 
+  "cabecalho"
+  "conteudo"
+  "rodape";
+  grid-template-columns: auto;
+  grid-template-rows: 50px auto auto;
+}
+
+.cabecalho{
+  grid-area: cabecalho;
+  align-items: center;
+  display: flex;
+  padding: 0 2rem;
+}
+
+.conteudo{
+  grid-area: conteudo;
+}
+
+.rodape{
+  grid-area: rodape;
+  text-align: center;
+  padding: 1rem;
+  color: #333333;
+  font-size: 0.8rem;
+  background-color: #fdfdfd;
+}

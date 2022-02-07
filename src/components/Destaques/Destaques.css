@@ -1,0 +1,99 @@
+.caixa{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.destaques{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: calc(100vh - 50px);
+    grid-template-areas:
+    "fortnite fortnite fortnite pubg"
+    "fortnite fortnite fortnite slack"
+    "categorias categorias csgo whatsapp";
+    gap: 0.2rem;
+}
+
+.destaques__titulo {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fdfdfdfd;
+    padding: 0.6rem;
+    width: 100%;
+    text-align: center;
+}
+
+.destaques__principal,.destaques__secundario{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.destaques__principal{
+    grid-area: fortnite;
+    background-image: url('../../../public/images/fortnite.jpg');
+}
+
+.destaques__secundario:nth-child(2){
+    grid-area: pubg;
+    background-image: url('../../../public/images/pubg.jpg');
+}
+
+.destaques__secundario:nth-child(3){
+    grid-area: slack;
+    background-image: url('../../../public/images/slack.png');
+}
+
+.destaques__secundario:nth-child(4){
+    grid-area: whatsapp;
+    background-image: url('../../../public/images/whatsapp.png');
+}
+
+.destaques__secundario:nth-child(5){
+    grid-area: csgo;
+    background-image: url('../../../public/images/cs-go.jpg');
+}
+
+.destaques__categorias{
+    grid-area: categorias;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 2fr;
+}
+.destaques__categorias___lista{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "item1 item2"
+    "item3 item4";
+    row-gap: 8px;
+    column-gap: 8px;
+}
+
+.destaques__categorias___item{
+    display: flex;
+    align-items: center;
+    border: 0.5px solid black;
+}
+
+.destaques__categorias___link{
+    color: inherit;
+}
+
+.destaques__categorias___item:nth-child(1){
+    grid-area: item1;
+}
+
+.destaques__categorias___item:nth-child(2){
+    grid-area: item2;
+}
+
+.destaques__categorias___item:nth-child(3){
+    grid-area: item3;
+}
+
+.destaques__categorias___item:nth-child(4){
+    grid-area: item4;
+}
